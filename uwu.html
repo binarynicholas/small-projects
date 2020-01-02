@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>UWU what's this?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>UWUify</h2>
+    <label> <p>insewt text to uwuify bewow!</p>
+    <textarea class="big" id="main-input"></textarea>
+    <p><a href="#" class="button" id="uwu-button">cwick to uwuify!</a></p></label>
+
+    <textarea class="big" id="main-output"></textarea>
+</body>
+
+<script>
+    let inputbox = $("#main-input");
+    let outputbox = $("#main-output");
+    $("#uwu-button").click(() => {
+        outputbox.val(translate(inputbox.val()));
+    });
+
+    function translate(text) {
+        let newtext = text;
+        newtext = newtext.replace(/(l|r)/g, "w");
+        newtext = newtext.replace(/v/g, "bb");
+        newtext = newtext.replace(/\sthe\s/g, " da ");
+        newtext = newtext.replace(/The\s/g, "Da ");
+        newtext = newtext.replace(/\s(th(is|at))\s/g, " d$2 ");
+        newtext = newtext.replace(/(m([aeiou]))/g, "mw$2");
+        newtext = newtext.replace(/(Th(is|at))/g, "D$2");
+        return newtext;
+    }
+    </script>
+</html>

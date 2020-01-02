@@ -1,0 +1,12 @@
+body
+{
+    width: 800px;
+    margin:auto;
+}
+
+textarea.big
+{
+    width: 700px;
+    height: 200px;
+    vertical-align: top;
+}
