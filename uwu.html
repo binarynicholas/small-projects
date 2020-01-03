@@ -33,9 +33,9 @@
         newtext = newtext.replace(/\sthe\s/g, " da ");
         newtext = newtext.replace(/The\s/g, "Da ");
         newtext = newtext.replace(/\s(th(is|at))\s/g, " d$2 ");
-        newtext = newtext.replace(/(th(em|ough|ewe|ey))/g, "d$2");
+        newtext = newtext.replace(/(th(em|ough|ewe|ey|eiw))/g, "d$2");
         newtext = newtext.replace(/(m(a))/g, "mw$2");
-        newtext = newtext.replace(/(Th(is|at|em|ough|ewe|ey))/g, "D$2");
+        newtext = newtext.replace(/(Th(is|at|em|ough|ewe|ey|eiw))/g, "D$2");
         newtext = newtext.replace(/(th(ing|ick|ous))/g, "f$2");
         newtext = newtext.replace(/(wi|Wi)(th)/g, "$1f")
         newtext = newtext.replace(/(Th(ing|ick|ous))/g, "F$2");
